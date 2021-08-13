@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+<h1> my first java script code</h1>
+
+ENTERUSERNAME:<input type="text" onkeyup="checkUsername()" id="email"> <span id="user_name"></span>
+
+
+<script>
+function checkUsername(){
+var userName=document.getElementById("email").value;//
+var users=["jagadeesh", "nazriya", "reddy"];
+if(users.includes(userName))
+{
+    document.getElementById("user_name").innerHTML="user taken";
+     document.getElementById("user_name").style.color="red";
+}
+else
+{
+    document.getElementById("user_name").innerHTML="user available";
+    document.getElementById("user_name").style.color="green";
+}
+}
+
+
+</script>
+
+
+
+</body>
+      
+       
+    
+     
+
+    
+
+
+
+
+
+
+
+
+</html>
